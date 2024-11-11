@@ -198,7 +198,7 @@ marquee{
     font-size: 26px;
 }
 .one p, .two p, .three p{
-    font-size: 16px;
+    font-size: 8px;
     width: 60%;
 }
 
@@ -418,7 +418,7 @@ footer{
 /* small screen laptop size */
 @media screen and (max-width:992px) {
     nav{
-        padding: 20px 20px; 
+        padding: 20px 50px; 
     }
     nav ul{
         gap: 5px;
@@ -485,17 +485,35 @@ footer{
 }
 }
 
-/* tablets  sizes styling*/
+/* tablets  sizes styling 1rem =60px */
 @media screen and (max-width:576px){
     nav ul{
-        display: none;
-}
+        position: fixed;
+        top: -35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 60px;
+        text-align: center;
+        gap: 30px;
+        flex-direction: column;
+        border: 1px solid green;
+        background-color: gray;
+        width: 60%;
+        transition: 0.5s ease-in-out;
+    }
+
+
     nav button{
         display: none;
     }
     .bi-list{
         display: block;
-        font-size: 40px;
+        font-size: 35px;
+    }
+
+    .bi-x{
+        display: none;
+        font-size:35px ;
     }
     #section1{
         flex-direction: column-reverse;
